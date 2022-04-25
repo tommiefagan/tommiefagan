@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<meta charset="utf-8">
+		<title>CA 2 External</title>
+		<link rel="stylesheet" href="background.css">
+		<script src="jquery-3.6.0.min.js"></script>
+		<!--[if lte IE 9]> 
+			<script src="http://css3-mediaqueries-	js.googlecode.com/svn/trunk/css3-	mediaqueries.js"></script> 
+		<![endif]-->
+		 
+		</div> 
+			<script>
+				function calculateTotal()
+				{
+				  let unit_price={
+					large: 4,
+					extra-large: 6,
+					supersize: 10,  
+				  };
+				  let item_price={}
+				  
+				  item_price.large = ($("#qty_large").val() * 4 )
+				  $("#price_large").val(item_price.large);
+				  
+				  item_price.extra-large = ($("#qty_extra-large").val() * 6 )
+				  $("#price_extra-large").val(item_price.extra-large);
+				  
+				  item_price.supersize = ($("#qty_supersize").val() * 10)
+				  $("#price_supersize").val(item_price.supersize);    
+				  
+				  let total = item_price.large + item_price.extra-large + item_price.supersize;
+
+				  $("#total_value").text(total);
+				}
+			</script>
+	</head>
+	
+	<body>
+		<div id="pagewrap">
+
+			<div id="header">
+				<h1>Brannigawn's Bar</h1>
+				
+					<marquee direction="down";width="75%" height="25%" scrollamount = "1">	
+								<p>	***** 'The best new burger restaurant in town!' - Mary O. <i>Yelp</i>' *****</p>
+								<p>	***** 'There's a new gourmet burger restaurant on the scene.' - Johnny B. <i>Tripadvisor</i> *****</p>
+								<p>	***** 'I'll be back.' - Arnold S. <i>Yelp</i>	*****</p>
+								<p> ***** 'Their burgers are divine!' - Joyce L. <i>Google Reviews</i> *****</p></marquee>
+			</div>
+				
+
+			<div id="content">	
+				<h1>Our Menu</h1>
+				Try our signature 'No Fuss' burger!</p>
+				<form>
+					<table border = "1">
+
+						<tr>
+							Order:
+							<td>
+								<select name=" 'No Fuss' burger">
+								<h1>
+									<option value="4">Large 150g €4 each</option>
+									<option value="6">Extra Large 275g €6 each</option>
+									<option value="10">Supersize 450g €10 each</option>
+								</h1>
+								</select>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+									<label for="quantity">Quantity:</label>
+									<input type="number" id="quantity" name="quantity" min="1" max="5">
+						</tr>
+						
+						<tr>
+							<td>
+								Sub-total:</label>
+								<input type="number" id="sub-total" min="0" max="50">
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								Discount Code</label>
+								<!--check for code 'shillelagh', if correct reduce sub-total by 10%-->
+								<input type="text">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Total</label>
+								€<input type="text" id="total">
+							</td>
+						</tr>
+					</table>
+					
+				</form>
+				
+				
+			</div>
+
+			<div id="sidebar">
+				
+				<h3>Login</h3>
+				
+					<form>
+
+      <!-- Input elements go here -->
+
+					 <table border = "1">
+						<tr>
+							<th>Username</th>
+							<td>
+								<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+									<input type="char" name="username"></td>
+								</form>
+						   </td>
+						</tr>
+
+						<tr>
+							<th>Password</th>
+							<td><input type="password" name="passwd"/></td>	
+						</tr>
+						
+						<tr><td>
+							<input type="submit" value="Submit">	
+						</td></tr>
+					</table>
+							
+				</form>
+			</div>
+			
+			<div id="footer">
+				<h4>Brannigawn's Bar accepts no responsibility for any illness or serious injury caused when attempting to eat the 'Supersize' meals. Customers are advised to seek the advice of a doctor before attempting any strenuous challenges.</h4>
+			</div>
+
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,91 @@
+<style type="text/css">
+
+			body {
+				font: 1em/150% Arial, Helvetica, sans-serif;
+				background-image: url(''delicious_burger.jpg);
+			}
+			a {
+				color: #669;
+				text-decoration: none;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+			h1 {
+				font: bold 36px/100% Arial, Helvetica, sans-serif;
+			}
+
+			/**** STRUCTURE ****/
+			#pagewrap {
+				padding: 5px;
+				width: 960px;
+				margin: 20px auto;
+			}
+			#header {
+				height: 180px;
+			}
+			#img{
+				float:right;
+				}
+			#content {
+				width: 600px;
+				float: left;
+			}
+			#sidebar {
+				width: 350px;
+				float: right;
+			}
+			#footer {
+				clear: both;
+			}
+
+			/**** border & guidelines ****/
+			#content {
+				background: #90EE90;
+			}
+			#sidebar {
+				background: #90EE90;
+			}
+			#header, #content, #sidebar {
+				margin-bottom: 5px;
+				background: #90EE90;
+			}
+			#pagewrap {
+			border: solid 1px #ccc;
+			}
+			
+			#header, #content, #sidebar, #footer {
+				border: solid 1px #ccc;
+				background: #90EE90; 
+			}
+			#container {
+				position: absolute;
+				max-width: 800px; /* Max width */
+				margin: 0 auto; /* Center */
+			}
+			
+		</style>
+
+
+<!--
+.container {
+  position: relative;
+  max-width: 800px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+.container .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; 
+  height: 10%;
+  width: auto; /* Full width */
+  padding: 20px; /* Some padding */
+  img { max-width: 100%; height: auto; } // To automatically fit the image.
+  
+  .img {
+  float: right;
+  }
+  -->
